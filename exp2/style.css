@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: wobble 5s ease-in-out infinite;
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform:translateY(0) rotate(-1deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(360deg);
+    }
+    }

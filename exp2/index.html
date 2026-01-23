@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiement 2</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Experiement 2</h1>
+
+    <div></div>
+    <script>
+    var yourName = prompt('What is your name?','');
+    var yourColor = prompt('Pick a Color (Blue,Pink,Green)')
+
+    if(yourName === ''){
+        var myTag = document.createElement('p');
+        var mySentence = document.createTextNode("You didn't give me a name");
+        myTag.appendChild(mySentence);
+        document.querySelector('div').appendChild(myTag);
+    }
+
+    else{
+        var myTag = document.createElement('p');
+        var mySentence = document.createTextNode(`${yourName}`);
+        myTag.appendChild(mySentence);
+        document.querySelector('div').appendChild(myTag);
+        if(yourColor === "Blue" || yourColor ==="blue")
+        document.querySelector('p').style.color="blue";
+        if(yourColor === "Pink" || yourColor ==="pink")
+        document.querySelector('p').style.color="pink";
+       if(yourColor === "Green" || yourColor ==="green")
+        document.querySelector('p').style.color="green";
+    }
+    
+
+    </script>
+</body>
+</html>
