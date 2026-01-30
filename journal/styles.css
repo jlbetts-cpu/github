@@ -24,6 +24,17 @@ h2 {
   animation: wobble 10s ease-in-out infinite;
 }
 
+.journal {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 10px;
+
+  margin: 50px auto;
+  padding: 25px;
+  max-width: 600px;
+}
 
 #car{
   position: absolute;
