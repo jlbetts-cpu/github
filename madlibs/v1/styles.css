@@ -40,7 +40,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-image: url(images/shark.png);
+    background-size: cover;
 }
 
 label {
@@ -48,7 +49,7 @@ label {
     font-weight: 700;
 }
 
-button {
+input[type="submit"] {
     font-family: "Unna", serif;
     font-size: 30px;
     border-radius: 8px;
