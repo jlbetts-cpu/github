@@ -1,0 +1,61 @@
+header h1 {
+    margin-bottom: 20px;
+    font-family: "Chewy", system-ui;
+    font-size: 45px;
+}
+
+form {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 800px;
+    background-color: rgb(255, 250, 244);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/shark.png);
+    background-size: cover;
+}
+
+label {
+    font-family: "Unna", serif;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    font-family: "Unna", serif;
+    font-size: 30px;
+    border-radius: 8px;
+    border-color: rgb(39, 39, 39);
+    background-color: rgb(255, 237, 165);
+}
+
+
+
