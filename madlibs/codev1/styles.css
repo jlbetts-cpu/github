@@ -32,7 +32,7 @@ main {
     border-radius: 20px;
     width: fit-content;
     max-width: 800px;
-    background-color: rgb(255, 250, 244);
+    background-color: rgb(232, 232, 232);
 }
 
 body {
@@ -54,7 +54,11 @@ input[type="submit"] {
     font-size: 30px;
     border-radius: 8px;
     border-color: rgb(39, 39, 39);
-    background-color: rgb(255, 237, 165);
+    background-color: rgb(93, 201, 255);
+}
+
+section {
+    width: 420px;
 }
 
 

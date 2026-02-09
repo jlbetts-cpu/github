@@ -3,7 +3,7 @@
     console.log("reading.js");
     const myform = document.querySelector('#myform');
     const madlib = document.querySelector('#madlib');
-
+    const section = document.querySelector('section')
         myform.addEventListener('submit', function(event){
         event.preventDefault();
 
@@ -61,6 +61,6 @@
 
         }
 
-        madlib.innerHTML = myText;
+        section.innerHTML = myText;
     } );
 })()
