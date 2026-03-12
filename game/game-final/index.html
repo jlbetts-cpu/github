@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads vs Tails</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+
+    <link href="styles.css" rel="stylesheet">
+
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Heads Vs Tails</h1>
+    <section id="game">
+        <div>
+            <img src="images/heads.png" alt="heads" width="300" height="300" id="heads">
+            <h2>Heads Health</h2>
+            
+            <div class="health">
+                <div id="healthbar0"><div></div></div><p id="headshealth">100%</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/tails.png" alt="tails" width="300" height="300" id="tails">
+            <h2>Tails Health</h2>
+            <div class="health">
+                <div id="healthbar1"><div></div></div><p id="tailshealth">100%</p>
+            </div>
+        </div>
+    </section>
+    <section id="action">
+        <div id="messages">
+            <p>Press the start button to randomly select Heads or Tails!</p>
+            <button id="start">Start Battle!</button>
+        </div>
+        <button id="attack" class="hidden">Attack!</button>
+    </section>
+    
+</body>
+</html>

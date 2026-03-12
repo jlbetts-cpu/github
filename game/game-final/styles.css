@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Jacquard 12", system-ui;
+    font-size: 100px;
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+body {
+    background-image:url('images/background.png');
+}
+
+#game {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#healthbar0, #healthbar1 {
+    width: 75%;
+    height: 30px;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 0px #000000;
+
+    
+}
+
+#healthbar0 div, #healthbar1 div{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(1,148,57,1) 0%, rgba(68,203,120,1) 50%, rgba(1,148,57,1) 100%);
+}
+
+#action {
+    max-width: 800px;
+    text-align: center;
+    padding: 10px 50px 50px 50px;
+    margin: auto;
+}
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    background-color: rgba(214, 214, 35, 0.826); 
+    color: #ffffff;
+    border: 3px solid #000000;
+    padding: 10px 20px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #000000;
+    box-shadow: 4px 4px 0px #000000; 
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.attack0 {
+    animation: veryweak 1s ease-in-out 2;
+}
+
+.attack1 {
+    animation: weak 1s ease-in-out 2;
+}
+
+.attack2 {
+    animation: medium 1s ease-in-out 2;
+}
+
+.attack3 {
+    animation: strong 1s ease-in-out 2;
+}
+
+.attack4 {
+    animation: massive 1s ease-in-out 2;
+}
+
+.defend2 {
+    animation: gobackward 2s ease-in-out 1;
+}
+
+.defend0 {
+    animation: shake 1s ease-in-out 2;
+}
+
+.defend1{
+    animation: spin 1s ease-in-out 2;
+}
+
+.dancing {
+    animation: dance 1s ease-in-out infinite;
+}
+
+@keyframes veryweak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes weak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.3);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes medium {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes strong {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.7);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes massive {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes gobackward {
+    0% {transform: scale(1);}
+    20% {transform: scale(0.6) rotate(-15deg);}
+    40% {transform: scale(0.6) rotate(15deg);}
+    60% {transform: scale(0.6) rotate(0deg);}
+    80% {transform: scale(0.6);}
+    100% {transform: scale(1);}
+}
+
+@keyframes shake {
+    0% {transform: translateX(0px);}
+    20% {transform: translateX(-10px);}
+    40% {transform: translateX(10px);}
+    60% {transform: translateX(-5px);}
+    80% {transform: translateX(5px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);} 
+}
+
+@keyframes dance {
+    0% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(-15deg); }
+    50% { transform: translateY(0px) rotate(0deg); }
+    75% { transform: translateY(-20px) rotate(15deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
